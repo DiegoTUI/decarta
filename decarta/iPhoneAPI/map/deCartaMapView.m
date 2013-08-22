@@ -223,6 +223,7 @@ deCartaXYFloat * getDirection(float x0,float y0,float x1,float y1){
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
     // The framebuffer will be re-created at the beginning of the next setFramebuffer method call.
     [deCartaLogger debug:@"MapView layoutSubviews"];
 	[self deleteFramebuffer];

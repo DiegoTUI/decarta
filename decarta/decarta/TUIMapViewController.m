@@ -14,8 +14,11 @@
 
 @property (strong, nonatomic) IBOutlet deCartaMapView *mapView;
 @property (strong, nonatomic) deCartaOverlay *routePins;
+@property (strong, nonatomic) NSMutableArray *routePositions;
+@property (strong, nonatomic) deCartaRoutePreference *routePrefs;
 
 -(void)addMapEventListeners;
+-(IBAction)routeClicked:(id)sender;
 
 @end
 
@@ -39,8 +42,11 @@
     [[TUILocationManager sharedInstance] addDelegate:self];
     [self addMapEventListeners];
     _routePins = [[deCartaOverlay alloc] initWithName:@"route_pins"];
+    _routePositions = [NSMutableArray array];
     [_mapView addOverlay:_routePins];
     [_mapView showOverlays];
+    _routePrefs = [[deCartaRoutePreference alloc] init];
+    _routePrefs.style=@"Fastest";
 }
 
 - (void)viewDidLayoutSubviews {
@@ -77,8 +83,24 @@
         pinrt.tilt = 0.0; //No tilt
         deCartaPin * pin=[[deCartaPin alloc] initWithPosition:position icon:pinicon message:@"You fuck my mother" rotationTilt:pinrt];
         [_routePins addPin:pin];
+        [_routePositions addObject:position];
         [_mapView refreshMap];
     }] forEventType:LONGTOUCH];
+}
+
+-(IBAction)routeClicked:(id)sender {
+    //Calculate a route with the available pins in the overlay
+    deCartaRoute * route=[deCartaRouteQuery query:_routePositions routePreference:_routePrefs];
+    if (route) {
+        deCartaPolyline *routeLine=[[deCartaPolyline alloc] initWithPositions:route.routeGeometry name:@"route"];
+        [_mapView addShape:routeLine];
+        //Zoom the map to a scale which can display the whole route
+        int zoom=[deCartaUtil getZoomLevelToFitBoundingBox:route.boundingBox withDisplaySize:_mapView.displaySize];
+        [_mapView setZoomLevel:zoom];
+        //Pan the map to center on the center of the route
+        [_mapView panToPosition:[route.boundingBox getCenterPosition]];
+        [_mapView refreshMap];
+    }
 }
 
 #pragma mark - TUILocationManagerDelegate Methods
