@@ -27,6 +27,11 @@
 -(void)getUserLocation;
 
 /**
+ * Sets user location
+ */
+-(void)setUserLocation:(CLLocation *)location;
+
+/**
  * Adds a delegate to the delegate list
  */
 -(void)addDelegate:(id<TUILocationManagerDelegate>)delegate;

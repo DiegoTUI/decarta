@@ -39,6 +39,10 @@
     [_locationManager startUpdatingLocation];
 }
 
+-(void)setUserLocation:(CLLocation *)location {
+    [_userDefaults setObject:location forKey:@"currentLocation"];
+}
+
 -(void)addDelegate:(id<TUILocationManagerDelegate>)delegate {
     [_delegates addObject:delegate];
 }

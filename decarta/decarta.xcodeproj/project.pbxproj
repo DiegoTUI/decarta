@@ -78,6 +78,7 @@
 		76A2D4B417C605A400CBBD70 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D4B317C605A400CBBD70 /* libxml2.dylib */; };
 		76A2D4BA17C60E3400CBBD70 /* TUIMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D4B917C60E3400CBBD70 /* TUIMapViewController.m */; };
 		76A2D4BE17C6308600CBBD70 /* TUILocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D4BD17C6308600CBBD70 /* TUILocationManager.m */; };
+		76A2D4C017C654E800CBBD70 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D4BF17C654E800CBBD70 /* pin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +222,7 @@
 		76A2D4B917C60E3400CBBD70 /* TUIMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUIMapViewController.m; sourceTree = "<group>"; };
 		76A2D4BC17C6308600CBBD70 /* TUILocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUILocationManager.h; sourceTree = "<group>"; };
 		76A2D4BD17C6308600CBBD70 /* TUILocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUILocationManager.m; sourceTree = "<group>"; };
+		76A2D4BF17C654E800CBBD70 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +517,7 @@
 		76A2D4B617C60D9F00CBBD70 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76A2D4BF17C654E800CBBD70 /* pin.png */,
 				76A2D34617C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard */,
 				76A2D34917C6041A00CBBD70 /* MainStoryboard_iPad.storyboard */,
 			);
@@ -617,6 +620,7 @@
 				76A2D34517C6041A00CBBD70 /* Default-568h@2x.png in Resources */,
 				76A2D34817C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard in Resources */,
 				76A2D34B17C6041A00CBBD70 /* MainStoryboard_iPad.storyboard in Resources */,
+				76A2D4C017C654E800CBBD70 /* pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
