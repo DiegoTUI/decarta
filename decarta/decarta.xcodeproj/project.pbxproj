@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76A2D32F17C6041A00CBBD70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D32E17C6041A00CBBD70 /* UIKit.framework */; };
+		76A2D33117C6041A00CBBD70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D33017C6041A00CBBD70 /* Foundation.framework */; };
+		76A2D33317C6041A00CBBD70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D33217C6041A00CBBD70 /* CoreGraphics.framework */; };
+		76A2D33917C6041A00CBBD70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D33717C6041A00CBBD70 /* InfoPlist.strings */; };
+		76A2D33B17C6041A00CBBD70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D33A17C6041A00CBBD70 /* main.m */; };
+		76A2D33F17C6041A00CBBD70 /* TUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D33E17C6041A00CBBD70 /* TUIAppDelegate.m */; };
+		76A2D34117C6041A00CBBD70 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D34017C6041A00CBBD70 /* Default.png */; };
+		76A2D34317C6041A00CBBD70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D34217C6041A00CBBD70 /* Default@2x.png */; };
+		76A2D34517C6041A00CBBD70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D34417C6041A00CBBD70 /* Default-568h@2x.png */; };
+		76A2D34817C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D34617C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard */; };
+		76A2D34B17C6041A00CBBD70 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D34917C6041A00CBBD70 /* MainStoryboard_iPad.storyboard */; };
+		76A2D34E17C6041A00CBBD70 /* TUIMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D34D17C6041A00CBBD70 /* TUIMasterViewController.m */; };
+		76A2D35117C6041A00CBBD70 /* TUIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D35017C6041A00CBBD70 /* TUIDetailViewController.m */; };
+		76A2D35917C6041A00CBBD70 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D35817C6041A00CBBD70 /* SenTestingKit.framework */; };
+		76A2D35A17C6041A00CBBD70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D32E17C6041A00CBBD70 /* UIKit.framework */; };
+		76A2D35B17C6041A00CBBD70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D33017C6041A00CBBD70 /* Foundation.framework */; };
+		76A2D36317C6041A00CBBD70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76A2D36117C6041A00CBBD70 /* InfoPlist.strings */; };
+		76A2D36617C6041A00CBBD70 /* decartaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D36517C6041A00CBBD70 /* decartaTests.m */; };
+		76A2D47C17C604BB00CBBD70 /* deCartaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D41117C604BB00CBBD70 /* deCartaConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D47D17C604BB00CBBD70 /* deCartaGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D41317C604BB00CBBD70 /* deCartaGlobals.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D47E17C604BB00CBBD70 /* deCartaEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D41617C604BB00CBBD70 /* deCartaEventListener.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D47F17C604BB00CBBD70 /* deCartaGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D41B17C604BB00CBBD70 /* deCartaGeocoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48017C604BB00CBBD70 /* deCartaGeocodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D41D17C604BB00CBBD70 /* deCartaGeocodeResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48117C604BB00CBBD70 /* deCartaAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42017C604BB00CBBD70 /* deCartaAddress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48217C604BB00CBBD70 /* deCartaBoundingBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42217C604BB00CBBD70 /* deCartaBoundingBox.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48317C604BB00CBBD70 /* deCartaFreeFormAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42417C604BB00CBBD70 /* deCartaFreeFormAddress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48417C604BB00CBBD70 /* deCartaLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42617C604BB00CBBD70 /* deCartaLocale.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48517C604BB00CBBD70 /* deCartaPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42817C604BB00CBBD70 /* deCartaPosition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48617C604BB00CBBD70 /* deCartaStructuredAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42A17C604BB00CBBD70 /* deCartaStructuredAddress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48717C604BB00CBBD70 /* deCartaCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42D17C604BB00CBBD70 /* deCartaCircle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48817C604BB00CBBD70 /* deCartaCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D42F17C604BB00CBBD70 /* deCartaCompass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48917C604BB00CBBD70 /* deCartaIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43117C604BB00CBBD70 /* deCartaIcon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48A17C604BB00CBBD70 /* deCartaInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43317C604BB00CBBD70 /* deCartaInfoWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48B17C604BB00CBBD70 /* deCartaLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43517C604BB00CBBD70 /* deCartaLength.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48C17C604BB00CBBD70 /* deCartaMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43717C604BB00CBBD70 /* deCartaMapLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48D17C604BB00CBBD70 /* deCartaMapLayerProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43917C604BB00CBBD70 /* deCartaMapLayerProperty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48E17C604BB00CBBD70 /* deCartaMapMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43B17C604BB00CBBD70 /* deCartaMapMode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D48F17C604BB00CBBD70 /* deCartaMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43D17C604BB00CBBD70 /* deCartaMapView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49017C604BB00CBBD70 /* deCartaOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D43F17C604BB00CBBD70 /* deCartaOverlay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49117C604BB00CBBD70 /* deCartaPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44117C604BB00CBBD70 /* deCartaPin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49217C604BB00CBBD70 /* deCartaPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44317C604BB00CBBD70 /* deCartaPolygon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49317C604BB00CBBD70 /* deCartaPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44517C604BB00CBBD70 /* deCartaPolyline.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49417C604BB00CBBD70 /* deCartaRotationTilt.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44717C604BB00CBBD70 /* deCartaRotationTilt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49517C604BB00CBBD70 /* deCartaShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44917C604BB00CBBD70 /* deCartaShape.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49617C604BB00CBBD70 /* deCartaTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44B17C604BB00CBBD70 /* deCartaTile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49717C604BB00CBBD70 /* deCartaTileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44D17C604BB00CBBD70 /* deCartaTileCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49817C604BB00CBBD70 /* deCartaTileGridResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D44F17C604BB00CBBD70 /* deCartaTileGridResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49917C604BB00CBBD70 /* deCartaTileThreadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45117C604BB00CBBD70 /* deCartaTileThreadPool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49A17C604BB00CBBD70 /* deCartaPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45417C604BB00CBBD70 /* deCartaPOI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49B17C604BB00CBBD70 /* deCartaPOIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45617C604BB00CBBD70 /* deCartaPOIQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49C17C604BB00CBBD70 /* deCartaPOISearchCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45817C604BB00CBBD70 /* deCartaPOISearchCriteria.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49D17C604BB00CBBD70 /* deCartaRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45B17C604BB00CBBD70 /* deCartaRoute.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49E17C604BB00CBBD70 /* deCartaRouteAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45D17C604BB00CBBD70 /* deCartaRouteAddress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D49F17C604BB00CBBD70 /* deCartaRouteInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D45F17C604BB00CBBD70 /* deCartaRouteInstruction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A017C604BB00CBBD70 /* deCartaRoutePreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46117C604BB00CBBD70 /* deCartaRoutePreference.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A117C604BB00CBBD70 /* deCartaRouteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46317C604BB00CBBD70 /* deCartaRouteQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A217C604BB00CBBD70 /* deCartaDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46617C604BB00CBBD70 /* deCartaDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A317C604BB00CBBD70 /* deCartaImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46817C604BB00CBBD70 /* deCartaImageUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A417C604BB00CBBD70 /* deCartaLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46A17C604BB00CBBD70 /* deCartaLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A517C604BB00CBBD70 /* deCartaUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46C17C604BB00CBBD70 /* deCartaUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A617C604BB00CBBD70 /* deCartaXYDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D46E17C604BB00CBBD70 /* deCartaXYDouble.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A717C604BB00CBBD70 /* deCartaXYFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D47017C604BB00CBBD70 /* deCartaXYFloat.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A817C604BB00CBBD70 /* deCartaXYInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D47217C604BB00CBBD70 /* deCartaXYInteger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4A917C604BB00CBBD70 /* deCartaXYZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D47417C604BB00CBBD70 /* deCartaXYZ.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4AA17C604BB00CBBD70 /* FastImage.S in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D47617C604BB00CBBD70 /* FastImage.S */; };
+		76A2D4AB17C604BB00CBBD70 /* deCartaWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D47917C604BB00CBBD70 /* deCartaWebServices.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4AC17C604BB00CBBD70 /* deCartaXMLProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2D47B17C604BB00CBBD70 /* deCartaXMLProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76A2D4AE17C6058100CBBD70 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D4AD17C6058100CBBD70 /* OpenGLES.framework */; };
+		76A2D4B017C6058900CBBD70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D4AF17C6058900CBBD70 /* QuartzCore.framework */; };
+		76A2D4B217C6059200CBBD70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D4B117C6059200CBBD70 /* CoreLocation.framework */; };
+		76A2D4B417C605A400CBBD70 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2D4B317C605A400CBBD70 /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76A2D35C17C6041A00CBBD70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76A2D32317C6041A00CBBD70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76A2D32A17C6041A00CBBD70;
+			remoteInfo = decarta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76A2D32B17C6041A00CBBD70 /* decarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = decarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A2D32E17C6041A00CBBD70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		76A2D33017C6041A00CBBD70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76A2D33217C6041A00CBBD70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		76A2D33617C6041A00CBBD70 /* decarta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "decarta-Info.plist"; sourceTree = "<group>"; };
+		76A2D33817C6041A00CBBD70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76A2D33A17C6041A00CBBD70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76A2D33C17C6041A00CBBD70 /* decarta-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "decarta-Prefix.pch"; sourceTree = "<group>"; };
+		76A2D33D17C6041A00CBBD70 /* TUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUIAppDelegate.h; sourceTree = "<group>"; };
+		76A2D33E17C6041A00CBBD70 /* TUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUIAppDelegate.m; sourceTree = "<group>"; };
+		76A2D34017C6041A00CBBD70 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		76A2D34217C6041A00CBBD70 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		76A2D34417C6041A00CBBD70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		76A2D34717C6041A00CBBD70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		76A2D34A17C6041A00CBBD70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		76A2D34C17C6041A00CBBD70 /* TUIMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUIMasterViewController.h; sourceTree = "<group>"; };
+		76A2D34D17C6041A00CBBD70 /* TUIMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUIMasterViewController.m; sourceTree = "<group>"; };
+		76A2D34F17C6041A00CBBD70 /* TUIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUIDetailViewController.h; sourceTree = "<group>"; };
+		76A2D35017C6041A00CBBD70 /* TUIDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUIDetailViewController.m; sourceTree = "<group>"; };
+		76A2D35717C6041A00CBBD70 /* decartaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = decartaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A2D35817C6041A00CBBD70 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		76A2D36017C6041A00CBBD70 /* decartaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "decartaTests-Info.plist"; sourceTree = "<group>"; };
+		76A2D36217C6041A00CBBD70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76A2D36417C6041A00CBBD70 /* decartaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decartaTests.h; sourceTree = "<group>"; };
+		76A2D36517C6041A00CBBD70 /* decartaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = decartaTests.m; sourceTree = "<group>"; };
+		76A2D40F17C604BB00CBBD70 /* deCartaAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaAPI.h; sourceTree = "<group>"; };
+		76A2D41017C604BB00CBBD70 /* deCartaConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaConfig.h; sourceTree = "<group>"; };
+		76A2D41117C604BB00CBBD70 /* deCartaConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaConfig.m; sourceTree = "<group>"; };
+		76A2D41217C604BB00CBBD70 /* deCartaGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaGlobals.h; sourceTree = "<group>"; };
+		76A2D41317C604BB00CBBD70 /* deCartaGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaGlobals.m; sourceTree = "<group>"; };
+		76A2D41517C604BB00CBBD70 /* deCartaEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaEventListener.h; sourceTree = "<group>"; };
+		76A2D41617C604BB00CBBD70 /* deCartaEventListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaEventListener.m; sourceTree = "<group>"; };
+		76A2D41717C604BB00CBBD70 /* deCartaEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaEventSource.h; sourceTree = "<group>"; };
+		76A2D41A17C604BB00CBBD70 /* deCartaGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaGeocoder.h; sourceTree = "<group>"; };
+		76A2D41B17C604BB00CBBD70 /* deCartaGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaGeocoder.m; sourceTree = "<group>"; };
+		76A2D41C17C604BB00CBBD70 /* deCartaGeocodeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaGeocodeResponse.h; sourceTree = "<group>"; };
+		76A2D41D17C604BB00CBBD70 /* deCartaGeocodeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaGeocodeResponse.m; sourceTree = "<group>"; };
+		76A2D41F17C604BB00CBBD70 /* deCartaAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaAddress.h; sourceTree = "<group>"; };
+		76A2D42017C604BB00CBBD70 /* deCartaAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaAddress.m; sourceTree = "<group>"; };
+		76A2D42117C604BB00CBBD70 /* deCartaBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaBoundingBox.h; sourceTree = "<group>"; };
+		76A2D42217C604BB00CBBD70 /* deCartaBoundingBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaBoundingBox.m; sourceTree = "<group>"; };
+		76A2D42317C604BB00CBBD70 /* deCartaFreeFormAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaFreeFormAddress.h; sourceTree = "<group>"; };
+		76A2D42417C604BB00CBBD70 /* deCartaFreeFormAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaFreeFormAddress.m; sourceTree = "<group>"; };
+		76A2D42517C604BB00CBBD70 /* deCartaLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaLocale.h; sourceTree = "<group>"; };
+		76A2D42617C604BB00CBBD70 /* deCartaLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaLocale.m; sourceTree = "<group>"; };
+		76A2D42717C604BB00CBBD70 /* deCartaPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPosition.h; sourceTree = "<group>"; };
+		76A2D42817C604BB00CBBD70 /* deCartaPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPosition.m; sourceTree = "<group>"; };
+		76A2D42917C604BB00CBBD70 /* deCartaStructuredAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaStructuredAddress.h; sourceTree = "<group>"; };
+		76A2D42A17C604BB00CBBD70 /* deCartaStructuredAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaStructuredAddress.m; sourceTree = "<group>"; };
+		76A2D42C17C604BB00CBBD70 /* deCartaCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaCircle.h; sourceTree = "<group>"; };
+		76A2D42D17C604BB00CBBD70 /* deCartaCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaCircle.m; sourceTree = "<group>"; };
+		76A2D42E17C604BB00CBBD70 /* deCartaCompass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaCompass.h; sourceTree = "<group>"; };
+		76A2D42F17C604BB00CBBD70 /* deCartaCompass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaCompass.m; sourceTree = "<group>"; };
+		76A2D43017C604BB00CBBD70 /* deCartaIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaIcon.h; sourceTree = "<group>"; };
+		76A2D43117C604BB00CBBD70 /* deCartaIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaIcon.m; sourceTree = "<group>"; };
+		76A2D43217C604BB00CBBD70 /* deCartaInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaInfoWindow.h; sourceTree = "<group>"; };
+		76A2D43317C604BB00CBBD70 /* deCartaInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaInfoWindow.m; sourceTree = "<group>"; };
+		76A2D43417C604BB00CBBD70 /* deCartaLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaLength.h; sourceTree = "<group>"; };
+		76A2D43517C604BB00CBBD70 /* deCartaLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaLength.m; sourceTree = "<group>"; };
+		76A2D43617C604BB00CBBD70 /* deCartaMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaMapLayer.h; sourceTree = "<group>"; };
+		76A2D43717C604BB00CBBD70 /* deCartaMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaMapLayer.m; sourceTree = "<group>"; };
+		76A2D43817C604BB00CBBD70 /* deCartaMapLayerProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaMapLayerProperty.h; sourceTree = "<group>"; };
+		76A2D43917C604BB00CBBD70 /* deCartaMapLayerProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaMapLayerProperty.m; sourceTree = "<group>"; };
+		76A2D43A17C604BB00CBBD70 /* deCartaMapMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaMapMode.h; sourceTree = "<group>"; };
+		76A2D43B17C604BB00CBBD70 /* deCartaMapMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaMapMode.m; sourceTree = "<group>"; };
+		76A2D43C17C604BB00CBBD70 /* deCartaMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaMapView.h; sourceTree = "<group>"; };
+		76A2D43D17C604BB00CBBD70 /* deCartaMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaMapView.m; sourceTree = "<group>"; };
+		76A2D43E17C604BB00CBBD70 /* deCartaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaOverlay.h; sourceTree = "<group>"; };
+		76A2D43F17C604BB00CBBD70 /* deCartaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaOverlay.m; sourceTree = "<group>"; };
+		76A2D44017C604BB00CBBD70 /* deCartaPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPin.h; sourceTree = "<group>"; };
+		76A2D44117C604BB00CBBD70 /* deCartaPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPin.m; sourceTree = "<group>"; };
+		76A2D44217C604BB00CBBD70 /* deCartaPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPolygon.h; sourceTree = "<group>"; };
+		76A2D44317C604BB00CBBD70 /* deCartaPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPolygon.m; sourceTree = "<group>"; };
+		76A2D44417C604BB00CBBD70 /* deCartaPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPolyline.h; sourceTree = "<group>"; };
+		76A2D44517C604BB00CBBD70 /* deCartaPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPolyline.m; sourceTree = "<group>"; };
+		76A2D44617C604BB00CBBD70 /* deCartaRotationTilt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaRotationTilt.h; sourceTree = "<group>"; };
+		76A2D44717C604BB00CBBD70 /* deCartaRotationTilt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaRotationTilt.m; sourceTree = "<group>"; };
+		76A2D44817C604BB00CBBD70 /* deCartaShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaShape.h; sourceTree = "<group>"; };
+		76A2D44917C604BB00CBBD70 /* deCartaShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaShape.m; sourceTree = "<group>"; };
+		76A2D44A17C604BB00CBBD70 /* deCartaTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaTile.h; sourceTree = "<group>"; };
+		76A2D44B17C604BB00CBBD70 /* deCartaTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaTile.m; sourceTree = "<group>"; };
+		76A2D44C17C604BB00CBBD70 /* deCartaTileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaTileCache.h; sourceTree = "<group>"; };
+		76A2D44D17C604BB00CBBD70 /* deCartaTileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaTileCache.m; sourceTree = "<group>"; };
+		76A2D44E17C604BB00CBBD70 /* deCartaTileGridResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaTileGridResponse.h; sourceTree = "<group>"; };
+		76A2D44F17C604BB00CBBD70 /* deCartaTileGridResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaTileGridResponse.m; sourceTree = "<group>"; };
+		76A2D45017C604BB00CBBD70 /* deCartaTileThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaTileThreadPool.h; sourceTree = "<group>"; };
+		76A2D45117C604BB00CBBD70 /* deCartaTileThreadPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaTileThreadPool.m; sourceTree = "<group>"; };
+		76A2D45317C604BB00CBBD70 /* deCartaPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPOI.h; sourceTree = "<group>"; };
+		76A2D45417C604BB00CBBD70 /* deCartaPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPOI.m; sourceTree = "<group>"; };
+		76A2D45517C604BB00CBBD70 /* deCartaPOIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPOIQuery.h; sourceTree = "<group>"; };
+		76A2D45617C604BB00CBBD70 /* deCartaPOIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPOIQuery.m; sourceTree = "<group>"; };
+		76A2D45717C604BB00CBBD70 /* deCartaPOISearchCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaPOISearchCriteria.h; sourceTree = "<group>"; };
+		76A2D45817C604BB00CBBD70 /* deCartaPOISearchCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaPOISearchCriteria.m; sourceTree = "<group>"; };
+		76A2D45A17C604BB00CBBD70 /* deCartaRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaRoute.h; sourceTree = "<group>"; };
+		76A2D45B17C604BB00CBBD70 /* deCartaRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaRoute.m; sourceTree = "<group>"; };
+		76A2D45C17C604BB00CBBD70 /* deCartaRouteAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaRouteAddress.h; sourceTree = "<group>"; };
+		76A2D45D17C604BB00CBBD70 /* deCartaRouteAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaRouteAddress.m; sourceTree = "<group>"; };
+		76A2D45E17C604BB00CBBD70 /* deCartaRouteInstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaRouteInstruction.h; sourceTree = "<group>"; };
+		76A2D45F17C604BB00CBBD70 /* deCartaRouteInstruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaRouteInstruction.m; sourceTree = "<group>"; };
+		76A2D46017C604BB00CBBD70 /* deCartaRoutePreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaRoutePreference.h; sourceTree = "<group>"; };
+		76A2D46117C604BB00CBBD70 /* deCartaRoutePreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaRoutePreference.m; sourceTree = "<group>"; };
+		76A2D46217C604BB00CBBD70 /* deCartaRouteQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaRouteQuery.h; sourceTree = "<group>"; };
+		76A2D46317C604BB00CBBD70 /* deCartaRouteQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaRouteQuery.m; sourceTree = "<group>"; };
+		76A2D46517C604BB00CBBD70 /* deCartaDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaDictionary.h; sourceTree = "<group>"; };
+		76A2D46617C604BB00CBBD70 /* deCartaDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaDictionary.m; sourceTree = "<group>"; };
+		76A2D46717C604BB00CBBD70 /* deCartaImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaImageUtil.h; sourceTree = "<group>"; };
+		76A2D46817C604BB00CBBD70 /* deCartaImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaImageUtil.m; sourceTree = "<group>"; };
+		76A2D46917C604BB00CBBD70 /* deCartaLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaLogger.h; sourceTree = "<group>"; };
+		76A2D46A17C604BB00CBBD70 /* deCartaLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaLogger.m; sourceTree = "<group>"; };
+		76A2D46B17C604BB00CBBD70 /* deCartaUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaUtil.h; sourceTree = "<group>"; };
+		76A2D46C17C604BB00CBBD70 /* deCartaUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaUtil.m; sourceTree = "<group>"; };
+		76A2D46D17C604BB00CBBD70 /* deCartaXYDouble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaXYDouble.h; sourceTree = "<group>"; };
+		76A2D46E17C604BB00CBBD70 /* deCartaXYDouble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaXYDouble.m; sourceTree = "<group>"; };
+		76A2D46F17C604BB00CBBD70 /* deCartaXYFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaXYFloat.h; sourceTree = "<group>"; };
+		76A2D47017C604BB00CBBD70 /* deCartaXYFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaXYFloat.m; sourceTree = "<group>"; };
+		76A2D47117C604BB00CBBD70 /* deCartaXYInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaXYInteger.h; sourceTree = "<group>"; };
+		76A2D47217C604BB00CBBD70 /* deCartaXYInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaXYInteger.m; sourceTree = "<group>"; };
+		76A2D47317C604BB00CBBD70 /* deCartaXYZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaXYZ.h; sourceTree = "<group>"; };
+		76A2D47417C604BB00CBBD70 /* deCartaXYZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaXYZ.m; sourceTree = "<group>"; };
+		76A2D47517C604BB00CBBD70 /* FastImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastImage.h; sourceTree = "<group>"; };
+		76A2D47617C604BB00CBBD70 /* FastImage.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = FastImage.S; sourceTree = "<group>"; };
+		76A2D47817C604BB00CBBD70 /* deCartaWebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaWebServices.h; sourceTree = "<group>"; };
+		76A2D47917C604BB00CBBD70 /* deCartaWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaWebServices.m; sourceTree = "<group>"; };
+		76A2D47A17C604BB00CBBD70 /* deCartaXMLProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deCartaXMLProcessor.h; sourceTree = "<group>"; };
+		76A2D47B17C604BB00CBBD70 /* deCartaXMLProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deCartaXMLProcessor.m; sourceTree = "<group>"; };
+		76A2D4AD17C6058100CBBD70 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		76A2D4AF17C6058900CBBD70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		76A2D4B117C6059200CBBD70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		76A2D4B317C605A400CBBD70 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76A2D32817C6041A00CBBD70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2D4B417C605A400CBBD70 /* libxml2.dylib in Frameworks */,
+				76A2D4B217C6059200CBBD70 /* CoreLocation.framework in Frameworks */,
+				76A2D4B017C6058900CBBD70 /* QuartzCore.framework in Frameworks */,
+				76A2D4AE17C6058100CBBD70 /* OpenGLES.framework in Frameworks */,
+				76A2D32F17C6041A00CBBD70 /* UIKit.framework in Frameworks */,
+				76A2D33117C6041A00CBBD70 /* Foundation.framework in Frameworks */,
+				76A2D33317C6041A00CBBD70 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2D35317C6041A00CBBD70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2D35917C6041A00CBBD70 /* SenTestingKit.framework in Frameworks */,
+				76A2D35A17C6041A00CBBD70 /* UIKit.framework in Frameworks */,
+				76A2D35B17C6041A00CBBD70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76A2D32217C6041A00CBBD70 = {
+			isa = PBXGroup;
+			children = (
+				76A2D4B317C605A400CBBD70 /* libxml2.dylib */,
+				76A2D4B117C6059200CBBD70 /* CoreLocation.framework */,
+				76A2D4AF17C6058900CBBD70 /* QuartzCore.framework */,
+				76A2D4AD17C6058100CBBD70 /* OpenGLES.framework */,
+				76A2D40E17C604BB00CBBD70 /* iPhoneAPI */,
+				76A2D33417C6041A00CBBD70 /* decarta */,
+				76A2D35E17C6041A00CBBD70 /* decartaTests */,
+				76A2D32D17C6041A00CBBD70 /* Frameworks */,
+				76A2D32C17C6041A00CBBD70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76A2D32C17C6041A00CBBD70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D32B17C6041A00CBBD70 /* decarta.app */,
+				76A2D35717C6041A00CBBD70 /* decartaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76A2D32D17C6041A00CBBD70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D32E17C6041A00CBBD70 /* UIKit.framework */,
+				76A2D33017C6041A00CBBD70 /* Foundation.framework */,
+				76A2D33217C6041A00CBBD70 /* CoreGraphics.framework */,
+				76A2D35817C6041A00CBBD70 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76A2D33417C6041A00CBBD70 /* decarta */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D33D17C6041A00CBBD70 /* TUIAppDelegate.h */,
+				76A2D33E17C6041A00CBBD70 /* TUIAppDelegate.m */,
+				76A2D34617C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard */,
+				76A2D34917C6041A00CBBD70 /* MainStoryboard_iPad.storyboard */,
+				76A2D34C17C6041A00CBBD70 /* TUIMasterViewController.h */,
+				76A2D34D17C6041A00CBBD70 /* TUIMasterViewController.m */,
+				76A2D34F17C6041A00CBBD70 /* TUIDetailViewController.h */,
+				76A2D35017C6041A00CBBD70 /* TUIDetailViewController.m */,
+				76A2D33517C6041A00CBBD70 /* Supporting Files */,
+			);
+			path = decarta;
+			sourceTree = "<group>";
+		};
+		76A2D33517C6041A00CBBD70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D33617C6041A00CBBD70 /* decarta-Info.plist */,
+				76A2D33717C6041A00CBBD70 /* InfoPlist.strings */,
+				76A2D33A17C6041A00CBBD70 /* main.m */,
+				76A2D33C17C6041A00CBBD70 /* decarta-Prefix.pch */,
+				76A2D34017C6041A00CBBD70 /* Default.png */,
+				76A2D34217C6041A00CBBD70 /* Default@2x.png */,
+				76A2D34417C6041A00CBBD70 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76A2D35E17C6041A00CBBD70 /* decartaTests */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D36417C6041A00CBBD70 /* decartaTests.h */,
+				76A2D36517C6041A00CBBD70 /* decartaTests.m */,
+				76A2D35F17C6041A00CBBD70 /* Supporting Files */,
+			);
+			path = decartaTests;
+			sourceTree = "<group>";
+		};
+		76A2D35F17C6041A00CBBD70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D36017C6041A00CBBD70 /* decartaTests-Info.plist */,
+				76A2D36117C6041A00CBBD70 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76A2D40E17C604BB00CBBD70 /* iPhoneAPI */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D40F17C604BB00CBBD70 /* deCartaAPI.h */,
+				76A2D41017C604BB00CBBD70 /* deCartaConfig.h */,
+				76A2D41117C604BB00CBBD70 /* deCartaConfig.m */,
+				76A2D41217C604BB00CBBD70 /* deCartaGlobals.h */,
+				76A2D41317C604BB00CBBD70 /* deCartaGlobals.m */,
+				76A2D41417C604BB00CBBD70 /* event */,
+				76A2D41817C604BB00CBBD70 /* exception */,
+				76A2D41917C604BB00CBBD70 /* geocode */,
+				76A2D41E17C604BB00CBBD70 /* location */,
+				76A2D42B17C604BB00CBBD70 /* map */,
+				76A2D45217C604BB00CBBD70 /* poi */,
+				76A2D45917C604BB00CBBD70 /* route */,
+				76A2D46417C604BB00CBBD70 /* util */,
+				76A2D47717C604BB00CBBD70 /* xml */,
+			);
+			path = iPhoneAPI;
+			sourceTree = "<group>";
+		};
+		76A2D41417C604BB00CBBD70 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D41517C604BB00CBBD70 /* deCartaEventListener.h */,
+				76A2D41617C604BB00CBBD70 /* deCartaEventListener.m */,
+				76A2D41717C604BB00CBBD70 /* deCartaEventSource.h */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		76A2D41817C604BB00CBBD70 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		76A2D41917C604BB00CBBD70 /* geocode */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D41A17C604BB00CBBD70 /* deCartaGeocoder.h */,
+				76A2D41B17C604BB00CBBD70 /* deCartaGeocoder.m */,
+				76A2D41C17C604BB00CBBD70 /* deCartaGeocodeResponse.h */,
+				76A2D41D17C604BB00CBBD70 /* deCartaGeocodeResponse.m */,
+			);
+			path = geocode;
+			sourceTree = "<group>";
+		};
+		76A2D41E17C604BB00CBBD70 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D41F17C604BB00CBBD70 /* deCartaAddress.h */,
+				76A2D42017C604BB00CBBD70 /* deCartaAddress.m */,
+				76A2D42117C604BB00CBBD70 /* deCartaBoundingBox.h */,
+				76A2D42217C604BB00CBBD70 /* deCartaBoundingBox.m */,
+				76A2D42317C604BB00CBBD70 /* deCartaFreeFormAddress.h */,
+				76A2D42417C604BB00CBBD70 /* deCartaFreeFormAddress.m */,
+				76A2D42517C604BB00CBBD70 /* deCartaLocale.h */,
+				76A2D42617C604BB00CBBD70 /* deCartaLocale.m */,
+				76A2D42717C604BB00CBBD70 /* deCartaPosition.h */,
+				76A2D42817C604BB00CBBD70 /* deCartaPosition.m */,
+				76A2D42917C604BB00CBBD70 /* deCartaStructuredAddress.h */,
+				76A2D42A17C604BB00CBBD70 /* deCartaStructuredAddress.m */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		76A2D42B17C604BB00CBBD70 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D42C17C604BB00CBBD70 /* deCartaCircle.h */,
+				76A2D42D17C604BB00CBBD70 /* deCartaCircle.m */,
+				76A2D42E17C604BB00CBBD70 /* deCartaCompass.h */,
+				76A2D42F17C604BB00CBBD70 /* deCartaCompass.m */,
+				76A2D43017C604BB00CBBD70 /* deCartaIcon.h */,
+				76A2D43117C604BB00CBBD70 /* deCartaIcon.m */,
+				76A2D43217C604BB00CBBD70 /* deCartaInfoWindow.h */,
+				76A2D43317C604BB00CBBD70 /* deCartaInfoWindow.m */,
+				76A2D43417C604BB00CBBD70 /* deCartaLength.h */,
+				76A2D43517C604BB00CBBD70 /* deCartaLength.m */,
+				76A2D43617C604BB00CBBD70 /* deCartaMapLayer.h */,
+				76A2D43717C604BB00CBBD70 /* deCartaMapLayer.m */,
+				76A2D43817C604BB00CBBD70 /* deCartaMapLayerProperty.h */,
+				76A2D43917C604BB00CBBD70 /* deCartaMapLayerProperty.m */,
+				76A2D43A17C604BB00CBBD70 /* deCartaMapMode.h */,
+				76A2D43B17C604BB00CBBD70 /* deCartaMapMode.m */,
+				76A2D43C17C604BB00CBBD70 /* deCartaMapView.h */,
+				76A2D43D17C604BB00CBBD70 /* deCartaMapView.m */,
+				76A2D43E17C604BB00CBBD70 /* deCartaOverlay.h */,
+				76A2D43F17C604BB00CBBD70 /* deCartaOverlay.m */,
+				76A2D44017C604BB00CBBD70 /* deCartaPin.h */,
+				76A2D44117C604BB00CBBD70 /* deCartaPin.m */,
+				76A2D44217C604BB00CBBD70 /* deCartaPolygon.h */,
+				76A2D44317C604BB00CBBD70 /* deCartaPolygon.m */,
+				76A2D44417C604BB00CBBD70 /* deCartaPolyline.h */,
+				76A2D44517C604BB00CBBD70 /* deCartaPolyline.m */,
+				76A2D44617C604BB00CBBD70 /* deCartaRotationTilt.h */,
+				76A2D44717C604BB00CBBD70 /* deCartaRotationTilt.m */,
+				76A2D44817C604BB00CBBD70 /* deCartaShape.h */,
+				76A2D44917C604BB00CBBD70 /* deCartaShape.m */,
+				76A2D44A17C604BB00CBBD70 /* deCartaTile.h */,
+				76A2D44B17C604BB00CBBD70 /* deCartaTile.m */,
+				76A2D44C17C604BB00CBBD70 /* deCartaTileCache.h */,
+				76A2D44D17C604BB00CBBD70 /* deCartaTileCache.m */,
+				76A2D44E17C604BB00CBBD70 /* deCartaTileGridResponse.h */,
+				76A2D44F17C604BB00CBBD70 /* deCartaTileGridResponse.m */,
+				76A2D45017C604BB00CBBD70 /* deCartaTileThreadPool.h */,
+				76A2D45117C604BB00CBBD70 /* deCartaTileThreadPool.m */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		76A2D45217C604BB00CBBD70 /* poi */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D45317C604BB00CBBD70 /* deCartaPOI.h */,
+				76A2D45417C604BB00CBBD70 /* deCartaPOI.m */,
+				76A2D45517C604BB00CBBD70 /* deCartaPOIQuery.h */,
+				76A2D45617C604BB00CBBD70 /* deCartaPOIQuery.m */,
+				76A2D45717C604BB00CBBD70 /* deCartaPOISearchCriteria.h */,
+				76A2D45817C604BB00CBBD70 /* deCartaPOISearchCriteria.m */,
+			);
+			path = poi;
+			sourceTree = "<group>";
+		};
+		76A2D45917C604BB00CBBD70 /* route */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D45A17C604BB00CBBD70 /* deCartaRoute.h */,
+				76A2D45B17C604BB00CBBD70 /* deCartaRoute.m */,
+				76A2D45C17C604BB00CBBD70 /* deCartaRouteAddress.h */,
+				76A2D45D17C604BB00CBBD70 /* deCartaRouteAddress.m */,
+				76A2D45E17C604BB00CBBD70 /* deCartaRouteInstruction.h */,
+				76A2D45F17C604BB00CBBD70 /* deCartaRouteInstruction.m */,
+				76A2D46017C604BB00CBBD70 /* deCartaRoutePreference.h */,
+				76A2D46117C604BB00CBBD70 /* deCartaRoutePreference.m */,
+				76A2D46217C604BB00CBBD70 /* deCartaRouteQuery.h */,
+				76A2D46317C604BB00CBBD70 /* deCartaRouteQuery.m */,
+			);
+			path = route;
+			sourceTree = "<group>";
+		};
+		76A2D46417C604BB00CBBD70 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D46517C604BB00CBBD70 /* deCartaDictionary.h */,
+				76A2D46617C604BB00CBBD70 /* deCartaDictionary.m */,
+				76A2D46717C604BB00CBBD70 /* deCartaImageUtil.h */,
+				76A2D46817C604BB00CBBD70 /* deCartaImageUtil.m */,
+				76A2D46917C604BB00CBBD70 /* deCartaLogger.h */,
+				76A2D46A17C604BB00CBBD70 /* deCartaLogger.m */,
+				76A2D46B17C604BB00CBBD70 /* deCartaUtil.h */,
+				76A2D46C17C604BB00CBBD70 /* deCartaUtil.m */,
+				76A2D46D17C604BB00CBBD70 /* deCartaXYDouble.h */,
+				76A2D46E17C604BB00CBBD70 /* deCartaXYDouble.m */,
+				76A2D46F17C604BB00CBBD70 /* deCartaXYFloat.h */,
+				76A2D47017C604BB00CBBD70 /* deCartaXYFloat.m */,
+				76A2D47117C604BB00CBBD70 /* deCartaXYInteger.h */,
+				76A2D47217C604BB00CBBD70 /* deCartaXYInteger.m */,
+				76A2D47317C604BB00CBBD70 /* deCartaXYZ.h */,
+				76A2D47417C604BB00CBBD70 /* deCartaXYZ.m */,
+				76A2D47517C604BB00CBBD70 /* FastImage.h */,
+				76A2D47617C604BB00CBBD70 /* FastImage.S */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		76A2D47717C604BB00CBBD70 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				76A2D47817C604BB00CBBD70 /* deCartaWebServices.h */,
+				76A2D47917C604BB00CBBD70 /* deCartaWebServices.m */,
+				76A2D47A17C604BB00CBBD70 /* deCartaXMLProcessor.h */,
+				76A2D47B17C604BB00CBBD70 /* deCartaXMLProcessor.m */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76A2D32A17C6041A00CBBD70 /* decarta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A2D36917C6041A00CBBD70 /* Build configuration list for PBXNativeTarget "decarta" */;
+			buildPhases = (
+				76A2D32717C6041A00CBBD70 /* Sources */,
+				76A2D32817C6041A00CBBD70 /* Frameworks */,
+				76A2D32917C6041A00CBBD70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = decarta;
+			productName = decarta;
+			productReference = 76A2D32B17C6041A00CBBD70 /* decarta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76A2D35617C6041A00CBBD70 /* decartaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A2D36C17C6041A00CBBD70 /* Build configuration list for PBXNativeTarget "decartaTests" */;
+			buildPhases = (
+				76A2D35217C6041A00CBBD70 /* Sources */,
+				76A2D35317C6041A00CBBD70 /* Frameworks */,
+				76A2D35417C6041A00CBBD70 /* Resources */,
+				76A2D35517C6041A00CBBD70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76A2D35D17C6041A00CBBD70 /* PBXTargetDependency */,
+			);
+			name = decartaTests;
+			productName = decartaTests;
+			productReference = 76A2D35717C6041A00CBBD70 /* decartaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76A2D32317C6041A00CBBD70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TUI;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tui Travel A&D";
+			};
+			buildConfigurationList = 76A2D32617C6041A00CBBD70 /* Build configuration list for PBXProject "decarta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76A2D32217C6041A00CBBD70;
+			productRefGroup = 76A2D32C17C6041A00CBBD70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76A2D32A17C6041A00CBBD70 /* decarta */,
+				76A2D35617C6041A00CBBD70 /* decartaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76A2D32917C6041A00CBBD70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2D33917C6041A00CBBD70 /* InfoPlist.strings in Resources */,
+				76A2D34117C6041A00CBBD70 /* Default.png in Resources */,
+				76A2D34317C6041A00CBBD70 /* Default@2x.png in Resources */,
+				76A2D34517C6041A00CBBD70 /* Default-568h@2x.png in Resources */,
+				76A2D34817C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard in Resources */,
+				76A2D34B17C6041A00CBBD70 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2D35417C6041A00CBBD70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2D36317C6041A00CBBD70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76A2D35517C6041A00CBBD70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76A2D32717C6041A00CBBD70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2D33B17C6041A00CBBD70 /* main.m in Sources */,
+				76A2D33F17C6041A00CBBD70 /* TUIAppDelegate.m in Sources */,
+				76A2D34E17C6041A00CBBD70 /* TUIMasterViewController.m in Sources */,
+				76A2D35117C6041A00CBBD70 /* TUIDetailViewController.m in Sources */,
+				76A2D47C17C604BB00CBBD70 /* deCartaConfig.m in Sources */,
+				76A2D47D17C604BB00CBBD70 /* deCartaGlobals.m in Sources */,
+				76A2D47E17C604BB00CBBD70 /* deCartaEventListener.m in Sources */,
+				76A2D47F17C604BB00CBBD70 /* deCartaGeocoder.m in Sources */,
+				76A2D48017C604BB00CBBD70 /* deCartaGeocodeResponse.m in Sources */,
+				76A2D48117C604BB00CBBD70 /* deCartaAddress.m in Sources */,
+				76A2D48217C604BB00CBBD70 /* deCartaBoundingBox.m in Sources */,
+				76A2D48317C604BB00CBBD70 /* deCartaFreeFormAddress.m in Sources */,
+				76A2D48417C604BB00CBBD70 /* deCartaLocale.m in Sources */,
+				76A2D48517C604BB00CBBD70 /* deCartaPosition.m in Sources */,
+				76A2D48617C604BB00CBBD70 /* deCartaStructuredAddress.m in Sources */,
+				76A2D48717C604BB00CBBD70 /* deCartaCircle.m in Sources */,
+				76A2D48817C604BB00CBBD70 /* deCartaCompass.m in Sources */,
+				76A2D48917C604BB00CBBD70 /* deCartaIcon.m in Sources */,
+				76A2D48A17C604BB00CBBD70 /* deCartaInfoWindow.m in Sources */,
+				76A2D48B17C604BB00CBBD70 /* deCartaLength.m in Sources */,
+				76A2D48C17C604BB00CBBD70 /* deCartaMapLayer.m in Sources */,
+				76A2D48D17C604BB00CBBD70 /* deCartaMapLayerProperty.m in Sources */,
+				76A2D48E17C604BB00CBBD70 /* deCartaMapMode.m in Sources */,
+				76A2D48F17C604BB00CBBD70 /* deCartaMapView.m in Sources */,
+				76A2D49017C604BB00CBBD70 /* deCartaOverlay.m in Sources */,
+				76A2D49117C604BB00CBBD70 /* deCartaPin.m in Sources */,
+				76A2D49217C604BB00CBBD70 /* deCartaPolygon.m in Sources */,
+				76A2D49317C604BB00CBBD70 /* deCartaPolyline.m in Sources */,
+				76A2D49417C604BB00CBBD70 /* deCartaRotationTilt.m in Sources */,
+				76A2D49517C604BB00CBBD70 /* deCartaShape.m in Sources */,
+				76A2D49617C604BB00CBBD70 /* deCartaTile.m in Sources */,
+				76A2D49717C604BB00CBBD70 /* deCartaTileCache.m in Sources */,
+				76A2D49817C604BB00CBBD70 /* deCartaTileGridResponse.m in Sources */,
+				76A2D49917C604BB00CBBD70 /* deCartaTileThreadPool.m in Sources */,
+				76A2D49A17C604BB00CBBD70 /* deCartaPOI.m in Sources */,
+				76A2D49B17C604BB00CBBD70 /* deCartaPOIQuery.m in Sources */,
+				76A2D49C17C604BB00CBBD70 /* deCartaPOISearchCriteria.m in Sources */,
+				76A2D49D17C604BB00CBBD70 /* deCartaRoute.m in Sources */,
+				76A2D49E17C604BB00CBBD70 /* deCartaRouteAddress.m in Sources */,
+				76A2D49F17C604BB00CBBD70 /* deCartaRouteInstruction.m in Sources */,
+				76A2D4A017C604BB00CBBD70 /* deCartaRoutePreference.m in Sources */,
+				76A2D4A117C604BB00CBBD70 /* deCartaRouteQuery.m in Sources */,
+				76A2D4A217C604BB00CBBD70 /* deCartaDictionary.m in Sources */,
+				76A2D4A317C604BB00CBBD70 /* deCartaImageUtil.m in Sources */,
+				76A2D4A417C604BB00CBBD70 /* deCartaLogger.m in Sources */,
+				76A2D4A517C604BB00CBBD70 /* deCartaUtil.m in Sources */,
+				76A2D4A617C604BB00CBBD70 /* deCartaXYDouble.m in Sources */,
+				76A2D4A717C604BB00CBBD70 /* deCartaXYFloat.m in Sources */,
+				76A2D4A817C604BB00CBBD70 /* deCartaXYInteger.m in Sources */,
+				76A2D4A917C604BB00CBBD70 /* deCartaXYZ.m in Sources */,
+				76A2D4AA17C604BB00CBBD70 /* FastImage.S in Sources */,
+				76A2D4AB17C604BB00CBBD70 /* deCartaWebServices.m in Sources */,
+				76A2D4AC17C604BB00CBBD70 /* deCartaXMLProcessor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76A2D35217C6041A00CBBD70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2D36617C6041A00CBBD70 /* decartaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76A2D35D17C6041A00CBBD70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76A2D32A17C6041A00CBBD70 /* decarta */;
+			targetProxy = 76A2D35C17C6041A00CBBD70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76A2D33717C6041A00CBBD70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A2D33817C6041A00CBBD70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		76A2D34617C6041A00CBBD70 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A2D34717C6041A00CBBD70 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		76A2D34917C6041A00CBBD70 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A2D34A17C6041A00CBBD70 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		76A2D36117C6041A00CBBD70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A2D36217C6041A00CBBD70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76A2D36717C6041A00CBBD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76A2D36817C6041A00CBBD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76A2D36A17C6041A00CBBD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "decarta/decarta-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "decarta/decarta-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		76A2D36B17C6041A00CBBD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "decarta/decarta-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "decarta/decarta-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		76A2D36D17C6041A00CBBD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/decarta.app/decarta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "decarta/decarta-Prefix.pch";
+				INFOPLIST_FILE = "decartaTests/decartaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		76A2D36E17C6041A00CBBD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/decarta.app/decarta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "decarta/decarta-Prefix.pch";
+				INFOPLIST_FILE = "decartaTests/decartaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76A2D32617C6041A00CBBD70 /* Build configuration list for PBXProject "decarta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A2D36717C6041A00CBBD70 /* Debug */,
+				76A2D36817C6041A00CBBD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A2D36917C6041A00CBBD70 /* Build configuration list for PBXNativeTarget "decarta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A2D36A17C6041A00CBBD70 /* Debug */,
+				76A2D36B17C6041A00CBBD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76A2D36C17C6041A00CBBD70 /* Build configuration list for PBXNativeTarget "decartaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A2D36D17C6041A00CBBD70 /* Debug */,
+				76A2D36E17C6041A00CBBD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76A2D32317C6041A00CBBD70 /* Project object */;
+}
