@@ -34,7 +34,7 @@
 
 /*! @internal No longer used */
 typedef struct{
-	NSString * routeId;
+	__unsafe_unretained NSString * routeId;
 	BOOL realTimeTraffic;
 }deCartaMapPreferenceStruct;
 
@@ -45,7 +45,7 @@ typedef struct{
 typedef struct{
 	int capacity;
 	double *times;
-	deCartaXYFloat **screenXYs;
+	__unsafe_unretained deCartaXYFloat **screenXYs;
 	int index;
 	int size;
 }TouchRecord;
@@ -61,9 +61,9 @@ typedef struct{
 	double speed;
 	double startMoveTime;
 	float movedDistance;
-	deCartaXYFloat * direction;
+	__unsafe_unretained deCartaXYFloat * direction;
     
-    deCartaEventListener * listener;
+    __unsafe_unretained deCartaEventListener * listener;
 }EasingRecord;
 
 /*! @internal For internal API use only */
@@ -72,9 +72,9 @@ typedef struct{
 	double digitalZoomEndTime;
     double speed;
 	BOOL digitalZooming;
-	deCartaXYFloat * zoomCenterXY;
+	__unsafe_unretained deCartaXYFloat * zoomCenterXY;
     
-    deCartaEventListener * listener;
+    __unsafe_unretained deCartaEventListener * listener;
 }ZoomingRecord;
 
 /*!

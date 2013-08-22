@@ -220,6 +220,7 @@
 		76A2D4AF17C6058900CBBD70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		76A2D4B117C6059200CBBD70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		76A2D4B317C605A400CBBD70 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		76A2D4B517C609C200CBBD70 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +312,7 @@
 				76A2D34017C6041A00CBBD70 /* Default.png */,
 				76A2D34217C6041A00CBBD70 /* Default@2x.png */,
 				76A2D34417C6041A00CBBD70 /* Default-568h@2x.png */,
+				76A2D4B517C609C200CBBD70 /* config.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

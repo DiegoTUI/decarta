@@ -7,6 +7,7 @@
 //
 
 #import "TUIAppDelegate.h"
+#import "config.h"
 
 @implementation TUIAppDelegate
 
@@ -18,6 +19,18 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    //Initialize deCarta
+    g_config.ENABLE_TILT=TRUE;
+	g_config.ENABLE_ROTATE=TRUE;
+	g_config.COMPASS_PLACE_LOCATION = COMPASS_BOTTOM_RIGHT;
+    g_config.LOG_LEVEL=4;
+    g_config.clientName=DEF_USERNAME;
+	g_config.clientPassword=DEF_PASS;
+	g_config.host=DEF_HOST;
+	g_config.configuration_default=DEF_CONFIG;
+	g_config.configuration_high_res=DEF_CONFIG_HI_RES;
+	g_config.transparentConfiguration=DEF_CONFIG_TRANS;
+    
     return YES;
 }
 							

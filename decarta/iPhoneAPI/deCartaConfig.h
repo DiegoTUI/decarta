@@ -24,19 +24,19 @@ typedef struct {
          * MUST BE SET BEFORE USING THE API.
          * Example: "map-sample-app"
          */
-	NSString * clientName;
+	__unsafe_unretained NSString * clientName;
 
         /*! DDS Web Services client password
          * MUST BE SET BEFORE USING THE API.
          * Example: "letmein"
          */
-	NSString * clientPassword;
+	__unsafe_unretained NSString * clientPassword;
 
 	     /*! DDS Web Services Host URL
          * MUST BE SET BEFORE USING THE API.
          * Example: "http://ws.decarta.com/openls/openls"
          */
-	NSString * host;
+	__unsafe_unretained NSString * host;
 
 	/*! DDS Web Services configuration string that controls the type of
          * data (if more than one type is available) and the display of the
@@ -45,21 +45,21 @@ typedef struct {
          * MUST BE SET BEFORE USING THE API.
          * Example: "global-decarta"
          */
-	NSString * configuration_default;
+	__unsafe_unretained NSString * configuration_default;
 
         /*! An alternate DDS Web Services configuration string used when the
          * deCarta iPhone API detects a high-resolution display.
          * MUST BE SET BEFORE USING THE API.
          * Example: "global-decarta-hi-res"
          */
-	NSString * configuration_high_res;
+	__unsafe_unretained NSString * configuration_high_res;
 
         /*! An alternate DDS Web Services configuration string used when the
          * the map type is set to HYBRID_MAP_TYPE.
          * MUST BE SET BEFORE USING THE API.
          * Example: "global-mobile-transparent"
          */
-	NSString * transparentConfiguration;
+	__unsafe_unretained NSString * transparentConfiguration;
 	
         /*! Pixel square tile size
          * Default: 256
@@ -162,14 +162,14 @@ typedef struct {
     int LOG_SIZE;
     
     /*! tile url format as /openls/image/TILE or /openls/image-cache/TILE */
-    NSString * TILE_URL_SUFFIX;
+    __unsafe_unretained NSString * TILE_URL_SUFFIX;
     
 	int STATELESS_SESSION_ID;
 
         /*! Defines the image format used by the API
          * Default: "PNG"
          */
-	NSString * IMAGE_FORMAT;
+	__unsafe_unretained NSString * IMAGE_FORMAT;
 
         /*! Indicates whether real-time traffic is enabled.
 		 * Real-time traffic is not supported at this time.
@@ -180,12 +180,12 @@ typedef struct {
         /*! deCarta Drill-Down Server (DDS) Version to use
          * Default: "4.5.1"
          */
-	NSString *REL;
+	__unsafe_unretained NSString *REL;
 
         /*! @internal For internal API use only.
          * Default: "2hq3AwyaQsMahDA5vYh1iBTaCMlFojTxLtCuzcIT2Ip7dY5d04VLPJEZvSSQd8u9"
          */
-	NSString *SATELLITE_KEY;
+	__unsafe_unretained NSString *SATELLITE_KEY;
 	
 }deCartaConfigStruct;
 
