@@ -622,6 +622,8 @@
 	{
 		[optimized appendString:@""];
 	}
+    
+    NSInteger countRoutePoints = [pos count];
 	
 	[xml appendString:[deCartaXMLProcessor getHeader:@"DetermineRouteRequest" sessionId:g_config.STATELESS_SESSION_ID maxResponses:100]];
 	[xml appendFormat:@"<xls:DetermineRouteRequest routeQueryType=\"%@\" provideRouteHandle='true'",prefs.routeQueryType];
@@ -632,8 +634,13 @@
 	[xml appendFormat:@"%@", [pos objectAtIndex:0]];
 	[xml appendString:@"</gml:pos></gml:Point></xls:Position>"];
 	[xml appendString:@"</xls:StartPoint><xls:EndPoint><xls:Position><gml:Point><gml:pos>"];
-	[xml appendFormat:@"%@", [pos objectAtIndex:1]];
+	[xml appendFormat:@"%@", [pos objectAtIndex:(countRoutePoints-1)]];
 	[xml appendString:@"</gml:pos></gml:Point></xls:Position></xls:EndPoint>"];
+    for (int i=1; i<(countRoutePoints-1); i++) {
+        [xml appendString:@"<xls:ViaPoint><xls:Position><gml:Point><gml:pos>"];
+        [xml appendFormat:@"%@",[pos objectAtIndex:i]];
+        [xml appendString:@"</gml:pos></gml:Point></xls:Position></xls:ViaPoint>"];
+    }
 	[xml appendString:@"</xls:WayPointList></xls:RoutePlan>"];
 	[xml appendString:inst];
 	[xml appendString:geo];
