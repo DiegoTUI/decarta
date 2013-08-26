@@ -16,9 +16,13 @@
 @property (strong, nonatomic) deCartaOverlay *routePins;
 @property (strong, nonatomic) NSMutableArray *routePositions;
 @property (strong, nonatomic) deCartaRoutePreference *routePrefs;
+@property (strong, nonatomic) IBOutlet UIButton *routeButton;
 
 -(void)addMapEventListeners;
 -(IBAction)routeClicked:(id)sender;
+-(void)refreshRouteButton;
+-(void)calculateRoute;
+-(void)resetMap;
 
 @end
 
@@ -84,11 +88,36 @@
         deCartaPin * pin=[[deCartaPin alloc] initWithPosition:position icon:pinicon message:@"You fuck my mother" rotationTilt:pinrt];
         [_routePins addPin:pin];
         [_routePositions addObject:position];
+        [self refreshRouteButton];
         [_mapView refreshMap];
     }] forEventType:LONGTOUCH];
 }
 
 -(IBAction)routeClicked:(id)sender {
+    //Is it route or reset?
+    UIButton *button = sender;
+    if ([button.titleLabel.text isEqualToString:@"Route"]){
+        //remove previous route
+        [_mapView removeShapes];
+        //calculate route
+        [self calculateRoute];
+        [button setTitle:@"Reset" forState:UIControlStateNormal];
+    } else {
+        //reset map
+        [self resetMap];
+    }
+    
+}
+
+-(void)refreshRouteButton {
+    NSString *title = @"Reset";
+    if (_routePositions.count > 1) {
+        title = @"Route";
+    }
+    [_routeButton setTitle:title forState:UIControlStateNormal];
+}
+
+-(void)calculateRoute {
     //Calculate a route with the available pins in the overlay
     deCartaRoute * route=[deCartaRouteQuery query:_routePositions routePreference:_routePrefs];
     if (route) {
@@ -101,6 +130,15 @@
         [_mapView panToPosition:[route.boundingBox getCenterPosition]];
         [_mapView refreshMap];
     }
+}
+
+-(void)resetMap {
+    //remove all pins from the overlay
+    [_routePins clear];
+    [_routePositions removeAllObjects];
+    //remove the route if existed
+    [_mapView removeShapes];
+    [_mapView refreshMap];
 }
 
 #pragma mark - TUILocationManagerDelegate Methods
