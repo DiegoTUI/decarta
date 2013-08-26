@@ -40,7 +40,9 @@
 }
 
 -(void)setUserLocation:(CLLocation *)location {
-    [_userDefaults setObject:location forKey:@"currentLocation"];
+    NSDictionary *locationToStore = @{@"latitude": [NSNumber numberWithDouble:location.coordinate.latitude],
+                                      @"longitude": [NSNumber numberWithDouble:location.coordinate.longitude]};
+    [_userDefaults setObject:locationToStore forKey:@"currentLocation"];
 }
 
 -(void)addDelegate:(id<TUILocationManagerDelegate>)delegate {
@@ -74,14 +76,18 @@
      didUpdateLocations:(NSArray *)locations {
     [_locationManager stopUpdatingLocation];
     CLLocation *location = [locations lastObject];
-    [_userDefaults setObject:location forKey:@"currentLocation"];
+    [self setUserLocation:location];
     [self callDelegatesWithLocation:location];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    CLLocation *location = nil;
     //No location available, let's try usersDefault
-    CLLocation *location = [_userDefaults objectForKey:@"currentLocation"];
-    if (location == nil) {
+    NSDictionary *locationStored = [_userDefaults objectForKey:@"currentLocation"];
+    if (locationStored) {
+        location = [[CLLocation alloc] initWithLatitude:[locationStored[@"latitude"] doubleValue]
+                                              longitude:[locationStored[@"longitude"] doubleValue]];
+    } else {
         //No location stored, go to defaults
         location = [[CLLocation alloc] initWithLatitude:DEF_LATITUDE longitude:DEF_LONGITUDE];
     }
