@@ -47,6 +47,7 @@
     [self addMapEventListeners];
     _routePins = [[deCartaOverlay alloc] initWithName:@"route_pins"];
     _routePositions = [NSMutableArray array];
+    [_mapView rotateXToDegree:-45];
     [_mapView addOverlay:_routePins];
     [_mapView showOverlays];
     _routePrefs = [[deCartaRoutePreference alloc] init];
