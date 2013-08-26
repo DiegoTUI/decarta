@@ -95,13 +95,12 @@
 
 -(IBAction)routeClicked:(id)sender {
     //Is it route or reset?
-    UIButton *button = sender;
-    if ([button.titleLabel.text isEqualToString:@"Route"]){
+    if ([_routeButton.titleLabel.text isEqualToString:@"Route"]){
         //remove previous route
         [_mapView removeShapes];
         //calculate route
         [self calculateRoute];
-        [button setTitle:@"Reset" forState:UIControlStateNormal];
+        [_routeButton setTitle:@"Reset" forState:UIControlStateNormal];
     } else {
         //reset map
         [self resetMap];
